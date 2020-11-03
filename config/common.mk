@@ -164,6 +164,9 @@ PRODUCT_PACKAGES += \
 #Include GApps
 include vendor/gapps/common/common-vendor.mk
 
+# Apex
+$(call inherit-product, vendor/descendant/config/apex.mk)
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
 ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
