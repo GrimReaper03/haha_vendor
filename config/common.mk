@@ -165,16 +165,7 @@ PRODUCT_PACKAGES += \
 include vendor/gapps/common/common-vendor.mk
 
 # Apex
-ifeq ($(TARGET_FLATTEN_APEX),false)
 $(call inherit-product, vendor/descendant/config/apex.mk)
-else
-# Hide "Google Play System Updates" if Apex disabled
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/descendant/overlay_apex_disabled
-
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/descendant/overlay_apex_disabled/common
-endif
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
