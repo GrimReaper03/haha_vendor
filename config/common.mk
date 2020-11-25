@@ -177,3 +177,6 @@ include vendor/sounds/sounds.mk
 #Sound Picker
 PRODUCT_PACKAGES += \
     SoundPicker
+
+#Build fonts
+include vendor/descendant/config/fonts.mk
