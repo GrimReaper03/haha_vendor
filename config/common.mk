@@ -171,3 +171,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
+
+#Build themes
+include vendor/themes/common.mk
+
+#Build sounds
+include vendor/sounds/sounds.mk
