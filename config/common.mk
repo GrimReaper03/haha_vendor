@@ -177,3 +177,7 @@ include vendor/themes/common.mk
 
 #Build sounds
 include vendor/sounds/sounds.mk
+
+#Sound Picker
+PRODUCT_PACKAGES += \
+    SoundPicker
