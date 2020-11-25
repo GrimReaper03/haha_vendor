@@ -158,3 +158,6 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
     GesturalNavigationOverlayMedium \
     GesturalNavigationOverlayHidden
+
+#Include GApps
+include vendor/gapps/common/common-vendor.mk
