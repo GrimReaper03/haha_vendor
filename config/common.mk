@@ -178,5 +178,9 @@ include vendor/sounds/sounds.mk
 PRODUCT_PACKAGES += \
     SoundPicker
 
+#Descendant AOD
+PRODUCT_PACKAGES += \
+    DescendantAOD
+
 #Build fonts
 include vendor/descendant/config/fonts.mk
