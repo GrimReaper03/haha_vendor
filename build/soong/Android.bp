@@ -1,4 +1,4 @@
-bootstrap_go_package {
+/*bootstrap_go_package {
     name: "soong-descendant-generator",
     pkgPath: "descendant/soong/generator",
     deps: [
@@ -23,16 +23,16 @@ descendant_generator {
 
     // Directories that can be imported by a cc_* module generated_headers property
     export_include_dirs: ["usr/include", "usr/techpack/audio/include"],
-
+*/
     // Sources for dependency tracking
-    dep_root: "$(TARGET_KERNEL_SOURCE)",
-    dep_files: [ "Makefile", "include/**/*", "arch/$(KERNEL_ARCH)/include/**/*", "techpack/audio/include/**/*"],
-}
+    //dep_root: "$(TARGET_KERNEL_SOURCE)",
+    //dep_files: [ "Makefile", "include/**/*", "arch/$(KERNEL_ARCH)/include/**/*", "techpack/audio/include/**/*"],
+//}
 
-cc_library_headers {
+/*cc_library_headers {
     name: "generated_kernel_headers",
     generated_headers: ["generated_kernel_includes"],
     export_generated_headers: ["generated_kernel_includes"],
     vendor_available: true,
     recovery_available: true,
-}
+}*/

@@ -1,6 +1,6 @@
-include vendor/descendant/config/ProductConfigQcom.mk
+#include vendor/descendant/config/ProductConfigQcom.mk
 
-PRODUCT_SOONG_NAMESPACES += $(PATHMAP_SOONG_NAMESPACES)
+#PRODUCT_SOONG_NAMESPACES += $(PATHMAP_SOONG_NAMESPACES)
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
