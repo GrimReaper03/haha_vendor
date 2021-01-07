@@ -156,7 +156,7 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayHidden
 
 #Include GApps
-include vendor/gapps/common/common-vendor.mk
+include vendor/gapps/pixel-gapps.mk
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
