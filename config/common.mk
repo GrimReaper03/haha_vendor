@@ -184,6 +184,10 @@ include vendor/sounds/sounds.mk
 PRODUCT_PACKAGES += \
     SoundPicker
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 #Descendant AOD
 PRODUCT_PACKAGES += \
     DescendantAOD
